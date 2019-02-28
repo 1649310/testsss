@@ -1,0 +1,37 @@
+.customers {
+    margin-bottom: 80px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+}
+.customers__review-head {
+    font: 50px 'GothamPro Black';
+    color: $text-color;
+    margin-bottom: 55px;
+}
+.customers__review-desc {
+    font: 300 18px 'Roboto'; 
+    line-height: 1.8;
+    margin-bottom: 55px;
+    color: $text-color;
+    span {
+        font-weight: 500;
+    }
+}
+
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font: 12px 'GothamPro Black';
+    color: #fff;
+    padding: 25px 40px;
+    background-color: #1c7fff;
+}
+.logo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}

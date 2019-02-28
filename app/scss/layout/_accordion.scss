@@ -1,0 +1,87 @@
+.accordion {
+    margin-bottom: 70px;
+    position: relative;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-color: rgba(#0000, 0.6);
+    }
+}
+
+.accordion__item {
+    min-height: 680px;
+    max-width: 20%;
+    text-align: center;
+    display: flex;
+}
+.open .accordion__item {
+    flex-direction: column;
+}
+
+.accordion__item_agro {
+    background: url(../../img/accordion/agro.jpg) 35% 100% no-repeat;
+}
+.accordion__item_light {
+    background-image: url(../../img/accordion/light.jpg);
+}
+.accordion__item_gryz {
+    background-image: url(../../img/accordion/gryz.jpg);
+}
+.accordion__item_spect {
+    background-image: url(../../img/accordion/spect.jpg);
+}
+.accordion__item_jd {
+    background-image: url(../../img/accordion/jd.jpg);
+}
+.accordion__item-head {
+    font: 77px 'GothamPro Black';
+    color: #808080;
+    display: inline-block;
+    transform: rotate(-60deg) translateY(25px);
+    transition: all .6s ease;
+    margin: auto;
+    cursor: pointer;
+}
+.open .accordion__item-head {
+    transform: rotate(0) translateY(20px);
+    font-size: 55px;
+    color: $text-color;
+    margin-bottom: 45px;
+}
+.open .accordion__inner-list {
+    max-height: 1000px;
+}
+.accordion__list {
+    display: flex;
+}
+.accordion__inner-list {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+.accordion__inner-title {
+    color: $text-color;
+    font: 900 16px 'Roboto'; 
+    margin-bottom: 35px;
+}
+.accordion__inner-item {
+    margin-bottom: 30px;
+}
+.accordion__content-item {
+    color: $text-color;
+    font: 300 16px 'Roboto'; 
+    margin-bottom: 15px;
+    &:before {
+        content: "";
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #1c7fff;
+    }
+}
+
